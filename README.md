@@ -1,40 +1,148 @@
-# Portfolio — React + Tailwind + Three.js + GSAP + Framer Motion
+# 🌟 Personal Portfolio Website
 
-A premium, single-page developer portfolio built for a Software Engineer / Frontend Developer / Python Developer / AI enthusiast / Freelancer.
+An award-style personal portfolio built with React, Tailwind CSS, GSAP, Three.js, and Framer Motion — designed to attract recruiters, international clients, and internship opportunities.
 
-## Stack
-- **React 18** + **Vite** — fast dev/build tooling
-- **Tailwind CSS** — utility-first styling with a custom dark "void" design system
-- **Three.js** — interactive animated "neural network" particle field in the hero
-- **GSAP + ScrollTrigger** — the experience timeline's animated connector line
-- **Framer Motion** — page-load sequence, scroll reveals, modal transitions, tab switching, project card layout animation
+🌐 **Live Demo:** [munazzaanwar.github.io/Portfolio](https://munazzaanwar.github.io/Portfolio/)
 
-## Structure
+---
+
+## 📌 Overview
+
+This portfolio is inspired by the design philosophy of Awwwards, Apple, Stripe, and Tesla. It showcases skills, projects, experience, and services through immersive 3D animations, smooth transitions, and a premium UI that stands out from typical developer portfolios.
+
+---
+
+## 🛠 Tech Stack
+
+| Technology | Purpose |
+|---|---|
+| React | Component-based UI architecture |
+| Tailwind CSS | Utility-first styling |
+| GSAP + ScrollTrigger | Scroll-driven animations and text reveals |
+| Three.js | 3D animated hero background with interactive particles |
+| Framer Motion | Page transitions and scroll-reveal effects |
+
+---
+
+## ✨ Features
+
+### Hero Section
+- 3D animated particle background (Three.js)
+- Interactive particle system responding to mouse movement
+- Animated introduction text with GSAP text reveal
+- Social media links with hover effects
+
+### About Section
+- Professional story layout
+- Animated cards with staggered reveal
+
+### Skills Section
+- Animated skill progress bars
+- Circular progress indicators for key competencies
+
+### Projects Section
+- Dynamic filterable project cards
+- Modal popup previews with project details
+- Category-based filtering (Web, AI/ML, Software)
+
+### Experience Timeline
+- Interactive vertical timeline
+- Smooth scroll-reveal for each milestone
+
+### Certifications
+- Animated showcase gallery
+
+### Contact Section
+- Functional contact form
+- Interactive layout
+
+### Global
+- GSAP ScrollTrigger throughout
+- Cursor animations and custom cursor
+- Smooth page transitions via Framer Motion
+- 3D hover tilt effects on cards
+- Fully responsive across all screen sizes
+
+---
+
+## 📁 Project Structure
+
 ```
-src/
-  components/      Reusable UI components (Navbar, Hero, About, Skills, etc.)
-  three/            Three.js scene component (NeuralField)
-  data/             Single source of truth for all content (content.js)
-  App.jsx           Composes sections, preloader, scroll progress bar
-  index.css         Tailwind layers + custom cursor/scrollbar/selection styles
+Portfolio/
+├── public/
+│   └── index.html
+├── src/
+│   ├── components/
+│   │   ├── Navbar.jsx
+│   │   ├── Hero.jsx          # Three.js 3D background
+│   │   ├── About.jsx
+│   │   ├── Skills.jsx        # Animated bars + circular indicators
+│   │   ├── Projects.jsx      # Filterable cards + modals
+│   │   ├── Experience.jsx    # Vertical interactive timeline
+│   │   ├── Certifications.jsx
+│   │   ├── Services.jsx
+│   │   └── Contact.jsx
+│   ├── App.jsx
+│   └── index.js
+├── tailwind.config.js
+└── package.json
 ```
 
-## Getting started
+---
+
+## 🚀 Getting Started
+
 ```bash
+# Clone the repository
+git clone https://github.com/munazzaanwar/Portfolio.git
+
+# Install dependencies
+cd Portfolio
 npm install
-npm run dev       # start local dev server
-npm run build     # production build to dist/
-npm run preview   # preview the production build
+
+# Start development server
+npm start
 ```
 
-## Customize
-- Edit **src/data/content.js** to change all copy: name, roles, timeline, skills, experience, projects, certifications, services.
-- Edit **tailwind.config.js** to change the color palette / fonts (currently Space Grotesk + Inter + JetBrains Mono).
-- Wire the contact form in **src/components/Contact.jsx** to a real backend (Formspree, Resend, a serverless function, etc.) — it currently simulates a submission.
-- Replace the OpenStreetMap embed URL in **Contact.jsx** with your own city's bounding box, or swap for Google Maps if you have an API key.
+Build for production:
+```bash
+npm run build
+```
 
-## Notes on accessibility & performance
-- Respects `prefers-reduced-motion`.
-- Custom cursor is disabled on touch/mobile widths.
-- Three.js particle count automatically drops on small screens.
-- All interactive elements are real `<button>`/`<a>` tags with visible focus states inherited from the browser; add custom `:focus-visible` styles if you want a more on-brand focus ring.
+---
+
+## 📦 Dependencies
+
+```json
+{
+  "react": "^18.x",
+  "tailwindcss": "^3.x",
+  "gsap": "^3.x",
+  "three": "^0.x",
+  "framer-motion": "^10.x"
+}
+```
+
+---
+
+## 📸 Pages
+
+| Page | Highlights |
+|---|---|
+| Home | 3D particle background, animated intro |
+| About | Story timeline, animated cards |
+| Skills | Progress bars, circular indicators |
+| Experience | Interactive vertical timeline |
+| Projects | Filter + modal previews |
+| Certifications | Animated gallery |
+| Services | Service cards |
+| Contact | Form + interactive layout |
+
+---
+
+## 👩‍💻 Author
+
+**Munazza Anwar**  
+Frontend Developer · Python Developer · AI Enthusiast  
+UMT Lahore · CGPA 3.35 / 4.0  
+[LinkedIn](https://linkedin.com/in/munazza-anwar) · munazzanwar@gmail.com
